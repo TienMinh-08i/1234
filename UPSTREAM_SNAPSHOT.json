@@ -1,0 +1,115 @@
+{
+  "date": "2026-10-20",
+  "files": [
+    {
+      "source": "paper_eval_v2\\dataset.py",
+      "sha256": "43c8b98876ba175a83425e29e6f023740961b4cf84fe79e4d97716fd74e2d8db",
+      "snapshot": "src/mm_data_prep/_engine/dataset.py",
+      "adapted_for_isolation": false
+    },
+    {
+      "source": "paper_eval_v2\\dataset_filter.py",
+      "sha256": "bbd9b6172a9eeea36ef910f6dade2f065cb63a5e595e37c69adc24e68f2d3cb5",
+      "snapshot": "src/mm_data_prep/_engine/dataset_filter.py",
+      "adapted_for_isolation": false
+    },
+    {
+      "source": "paper_eval_v2\\prepare_tests.py",
+      "sha256": "7949360ca10bee9d72458be607b0d5bdaa1fbd520fcfe446d468dfc7312550b3",
+      "snapshot": "src/mm_data_prep/_engine/prepare_tests.py",
+      "adapted_for_isolation": false
+    },
+    {
+      "source": "paper_eval_v2\\prepare_dataset.py",
+      "sha256": "75f957aad3607c7a0903e4b71cf3661f87ff17b25ee7c15c06d32ae2b3081586",
+      "snapshot": "src/mm_data_prep/_engine/prepare_dataset.py",
+      "adapted_for_isolation": false
+    },
+    {
+      "source": "paper_eval_v2\\evaluation.py",
+      "sha256": "2aad0d45f23446305113f8c4b1271344935a5b8f4b894f13fd2740fbf69b560f",
+      "snapshot": "src/mm_data_prep/_engine/evaluation.py",
+      "adapted_for_isolation": false
+    },
+    {
+      "source": "paper_eval_v2\\execution.py",
+      "sha256": "6981270ae29de47bf220c02f08bbddabb6bba19caa79191621e8541ddc5f1e57",
+      "snapshot": "src/mm_data_prep/_engine/execution.py",
+      "adapted_for_isolation": true
+    },
+    {
+      "source": "paper_eval_v2\\pytest_plugin.py",
+      "sha256": "5f273d1bfa8a357b2bad779ea22457a84f63d4afd29eb3fe861a8ead395b6a7b",
+      "snapshot": "src/mm_data_prep/_engine/pytest_plugin.py",
+      "adapted_for_isolation": true
+    },
+    {
+      "source": "paper_eval_v2\\provenance.py",
+      "sha256": "a59cb8bc26b85a4dc5c485d86d9bd2cce7da0431bbc8596b35da9bb7e46afd6f",
+      "snapshot": "src/mm_data_prep/_engine/provenance.py",
+      "adapted_for_isolation": false
+    },
+    {
+      "source": "paper_eval_v2\\storage.py",
+      "sha256": "c72370770cc779d932fdc7eed1f7254f70a2c6b4f2a6e7d53323b8aa6f948deb",
+      "snapshot": "src/mm_data_prep/_engine/storage.py",
+      "adapted_for_isolation": false
+    },
+    {
+      "source": "paper_eval_v2\\mutation_scope.py",
+      "sha256": "cbf149376574d0ad9427477636e582841519fa737b5680aea38b0eb36e3d3d15",
+      "snapshot": "src/mm_data_prep/_engine/mutation_scope.py",
+      "adapted_for_isolation": false
+    },
+    {
+      "source": "paper_eval_v2\\prepare_mutants.py",
+      "sha256": "2451b53e7a43c7d29ce18886727f547c403b43342dc6538cd7fde3c0b28c2293",
+      "snapshot": "src/mm_data_prep/_engine/prepare_mutants.py",
+      "adapted_for_isolation": true
+    },
+    {
+      "source": "paper_eval_v2\\mutant_worker.py",
+      "sha256": "ad47df3b4496ea174a52a7a8cbd0aea253e7df3af4dd93fbe07cda50555d87a6",
+      "snapshot": "src/mm_data_prep/_engine/mutant_worker.py",
+      "adapted_for_isolation": false
+    },
+    {
+      "source": "paper_eval_v2\\mutmut.py",
+      "sha256": "95fb2c6d8d6375ecf482564b4920d97792adf9df5e858134b007815078f129d0",
+      "snapshot": "src/mm_data_prep/_engine/mutmut.py",
+      "adapted_for_isolation": false
+    },
+    {
+      "source": "paper_eval_v2\\mutation_runtime.py",
+      "sha256": "1ff6f7ccef1715c1622f67fb75e8774d3c7e9a49aa2200d78294f34798924051",
+      "snapshot": "src/mm_data_prep/_engine/mutation_runtime.py",
+      "adapted_for_isolation": false
+    },
+    {
+      "source": "paper_eval_v2\\source.py",
+      "sha256": "6ddead610ae03dc1d3ad565a509efb3b328fcc34aebea5cfede224ac3f60aa9f",
+      "snapshot": "src/mm_data_prep/_engine/source.py",
+      "adapted_for_isolation": false
+    },
+    {
+      "source": "paper_eval_v2\\metrics.py",
+      "sha256": "bb7cdf429f6f84c440249cd4c6926ef9ac387e14b3c017ca13c2857a438fc023",
+      "snapshot": "src/mm_data_prep/_engine/metrics.py",
+      "adapted_for_isolation": false
+    },
+    {
+      "source": "specmind_test\\extract_marshmallow_dataset.py",
+      "sha256": "939778b3c6b0026097dd08ebeaf3d1d5f83087f2a725170484322bbae0b3ab5e",
+      "snapshot": "src/mm_data_prep/_engine/extract_legacy.py",
+      "adapted_for_isolation": false,
+      "usage": "Only documented API symbol detection helpers. Legacy trace/export entry points are not called."
+    }
+  ],
+  "notes": [
+    "No upstream files changed.",
+    "debug.py contains only the path guard.",
+    "Private engine imports and child PYTHONPATH use the isolated package.",
+    "Docker mounts the package, external checkout and artifacts separately.",
+    "Extraction uses the new extract.py/trace_plugin.py, keeping exact pytest nodeids."
+  ]
+}

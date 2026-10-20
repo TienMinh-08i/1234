@@ -1,0 +1,18 @@
+{
+  "repo": "../checkouts/marshmallow",
+  "output": "../work/marshmallow_run01",
+  "expected_commit": "60a803821466f3e537fa2729d65e1aaf7df9d2a4",
+  "documented_only": false,
+  "trace_timeout": 1800,
+  "pytest_timeout": 120,
+  "scope_timeout": 300,
+  "batch_size": 500,
+  "exclude": [
+    {
+      "pattern": "test_from_timestamp_with_overflow_value",
+      "reason": "Previous Windows extraction excluded this platform-sensitive overflow test. Explicit historical-parity option; remove this entry to trace the full suite."
+    }
+  ],
+  "image": "mm-data-prep-mutmut:0.1.0",
+  "mutmut_timeout": 1800
+}
